@@ -1,3 +1,4 @@
-FROM apache
-RUN apt-get update && apt-get install && rm-rf /var/lib/apt/list*
+FROM httpd:latest
+COPY ./index.html /usr/local/apache2/html/index.html
+
 
